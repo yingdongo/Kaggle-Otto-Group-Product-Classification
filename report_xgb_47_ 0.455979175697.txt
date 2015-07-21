@@ -1,0 +1,11 @@
+score:
+0.455979175697
+model_id:
+47
+XGBoostClassifier(alpha=0, booster='gbtree', colsample_bytree=0.82112898078,
+         early_stopping_rounds=30, eta=0.0570737768717,
+         eval_metric='mlogloss', gamma=0.022363448452, l=0, lambda_bias=0,
+         max_delta_step=8, max_depth=17, min_child_weight=9, nthread=4,
+         ntree_limit=0, num_class=9, num_round=1000,
+         objective='multi:softprob', seed=103770, silent=0,
+         subsample=0.780614173956, use_buffer=True)
