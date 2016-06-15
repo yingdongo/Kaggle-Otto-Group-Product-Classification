@@ -9,7 +9,6 @@ import os
 from xgb_wrapper import XGBoostClassifier
 from sklearn import preprocessing
 
-#os.system("ls ../input")
 
 train = pd.read_csv("train.csv")
 print("Training set has {0[0]} rows and {0[1]} columns".format(train.shape))
@@ -132,7 +131,6 @@ def log_loss_func(weights):
 starting_values = [0.5]*len(predictions)
 
 #adding constraints  and a different solver as suggested by user 16universe
-#https://kaggle2.blob.core.windows.net/forum-message-attachments/75655/2393/otto%20model%20weights.pdf?sv=2012-02-12&se=2015-05-03T21%3A22%3A17Z&sr=b&sp=r&sig=rkeA7EJC%2BiQ%2FJ%2BcMpcA4lYQLFh6ubNqs2XAkGtFsAv0%3D
 cons = ({'type':'eq','fun':lambda w: 1-sum(w)})
 #our weights are bound between 0 and 1
 bounds = [(0,1)]*len(predictions)

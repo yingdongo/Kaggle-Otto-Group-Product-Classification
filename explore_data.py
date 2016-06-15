@@ -104,7 +104,8 @@ for tl in ax.get_xticklabels():
     tl.set_fontsize(13)
 for tl in ax.get_yticklabels():
     tl.set_fontsize(13)
-    
+plt.ylabel('Frequency',fontsize=13)
+
 def autolabel(rects):
     # attach some text labels
     for rect in rects:
